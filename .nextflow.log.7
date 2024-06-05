@@ -1,0 +1,75 @@
+jun-05 19:37:43.467 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+jun-05 19:37:43.525 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+jun-05 19:37:43.538 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/fabio/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+jun-05 19:37:43.544 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+jun-05 19:37:43.545 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+jun-05 19:37:43.547 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+jun-05 19:37:43.554 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+jun-05 19:37:43.568 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/fabio/newcloud/new/nextflow.config
+jun-05 19:37:43.570 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/fabio/newcloud/new/nextflow.config
+jun-05 19:37:43.588 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/fabio/.nextflow/secrets/store.json
+jun-05 19:37:43.590 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1f12e153] - activable => nextflow.secret.LocalSecretsProvider@1f12e153
+jun-05 19:37:43.593 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+jun-05 19:37:43.813 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+jun-05 19:37:43.824 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [nostalgic_euler] DSL2 - revision: 948a51494b
+jun-05 19:37:43.825 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+jun-05 19:37:43.826 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+jun-05 19:37:43.863 [main] DEBUG nextflow.Session - Session UUID: ebe6b9b4-5aa7-4cb5-9666-669788e332d1
+jun-05 19:37:43.863 [main] DEBUG nextflow.Session - Run name: nostalgic_euler
+jun-05 19:37:43.863 [main] DEBUG nextflow.Session - Executor pool size: 8
+jun-05 19:37:43.869 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+jun-05 19:37:43.872 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+jun-05 19:37:43.885 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.2 build 5914
+  Created: 29-05-2024 06:19 UTC (08:19 CEST)
+  System: Mac OS X 14.5
+  Runtime: Groovy 4.0.21 on Java HotSpot(TM) 64-Bit Server VM 17.0.6+9-LTS-190
+  Encoding: UTF-8 (UTF-8)
+  Process: 87645@McClintock.local [127.0.0.1]
+  CPUs: 8 - Mem: 8 GB (65.9 MB) - Swap: 2 GB (1.3 GB)
+jun-05 19:37:43.895 [main] DEBUG nextflow.Session - Work-dir: /Users/fabio/newcloud/new/work [Mac OS X]
+jun-05 19:37:43.895 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/fabio/newcloud/new/bin
+jun-05 19:37:43.902 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+jun-05 19:37:43.907 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+jun-05 19:37:43.921 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+jun-05 19:37:43.927 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+jun-05 19:37:43.962 [main] DEBUG nextflow.Session - Session start
+jun-05 19:37:44.433 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+jun-05 19:37:44.543 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun-05 19:37:44.543 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun-05 19:37:44.548 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+jun-05 19:37:44.551 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+jun-05 19:37:44.554 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+jun-05 19:37:44.590 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun-05 19:37:44.590 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun-05 19:37:44.606 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun-05 19:37:44.606 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun-05 19:37:44.611 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun-05 19:37:44.611 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun-05 19:37:44.618 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun-05 19:37:44.618 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun-05 19:37:44.621 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun-05 19:37:44.621 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun-05 19:37:44.625 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun-05 19:37:44.625 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun-05 19:37:44.627 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: align_pe, align_se, trim, filterQuality, multiplexing, merge_sepe, rmdup, ontarget
+jun-05 19:37:44.627 [main] DEBUG nextflow.Session - Igniting dataflow network (8)
+jun-05 19:37:44.630 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: ./; pattern: pL4811A1_hP37_{1,2}.fastq.gz; options: [:]
+jun-05 19:37:44.630 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multiplexing
+jun-05 19:37:44.630 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > trim
+jun-05 19:37:44.630 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > align_se
+jun-05 19:37:44.631 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > align_pe
+jun-05 19:37:44.631 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > merge_sepe
+jun-05 19:37:44.631 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > rmdup
+jun-05 19:37:44.631 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > filterQuality
+jun-05 19:37:44.631 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_2d74117d564fa46b: /Users/fabio/newcloud/new/main.nf
+jun-05 19:37:44.631 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+jun-05 19:37:44.631 [main] DEBUG nextflow.Session - Session await
+jun-05 19:37:44.641 [main] DEBUG nextflow.Session - Session await > all processes finished
+jun-05 19:37:44.662 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+jun-05 19:37:44.662 [main] DEBUG nextflow.Session - Session await > all barriers passed
+jun-05 19:37:44.666 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+jun-05 19:37:44.822 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+jun-05 19:37:44.837 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+jun-05 19:37:44.838 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

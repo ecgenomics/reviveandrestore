@@ -1,0 +1,42 @@
+Read1 before filtering:
+total reads: 245572
+total bases: 35362368
+Q20 bases: 34424610(97.3481%)
+Q30 bases: 32664682(92.3713%)
+
+Read2 before filtering:
+total reads: 245572
+total bases: 35362368
+Q20 bases: 34307579(97.0172%)
+Q30 bases: 32381575(91.5707%)
+
+Merged and filtered:
+total reads: 142817
+total bases: 28095343
+Q20 bases: 27517050(97.9417%)
+Q30 bases: 26230921(93.3639%)
+
+Filtering result:
+reads passed filter: 483508
+reads failed due to low quality: 4570
+reads failed due to too many N: 188
+reads failed due to too short: 2878
+reads with adapter trimmed: 43475
+bases trimmed due to adapters: 1263991
+reads corrected by overlap analysis: 22431
+bases corrected by overlap analysis: 37539
+
+Duplication rate: 9.09061%
+
+Insert size peak (evaluated by paired-end reads): 0
+
+Read pairs merged: 142817
+% of original read pairs: 58.1569%
+% in reads after filtering: 100%
+
+
+JSON report: fastp.json
+HTML report: pL4811A1_hP37.report.html
+
+fastp -i pL4811A1_hP37_demultiplexed_R1.fastq -I pL4811A1_hP37_demultiplexed_R2.fastq --merge --merged_out pL4811A1_hP37.merged.fastq --out1 pL4811A1_hP37_trimmed_R1.fastq --out2 pL4811A1_hP37_trimmed_R2.fastq --unpaired1 pL4811A1_hP37_trimmed_unpaired_R1.fastq --unpaired2 pL4811A1_hP37_trimmed_unpaired_R2.fastq --overlap_len_require 11 --detect_adapter_for_pe -p --adapter_sequence=AGATCGGAAGAGCACACGTCTGAACTCCAGTCA --adapter_sequence_r2=AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT --trim_poly_g --poly_g_min_len 10 --length_required 30 --html pL4811A1_hP37.report.html 
+fastp v0.23.4, time used: 10 seconds

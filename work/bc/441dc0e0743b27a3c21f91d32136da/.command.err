@@ -1,0 +1,28 @@
+[E::bwa_idx_load_from_disk] fail to locate the index files
+[main_samview] fail to read the header from "-".
+INFO	2024-06-05 19:40:50	AddOrReplaceReadGroups	
+
+********** NOTE: Picard's command line syntax is changing.
+**********
+********** For more information, please see:
+********** 
+https://github.com/broadinstitute/picard/wiki/Command-Line-Syntax-Transition-For-Users-(Pre-Transition)
+**********
+********** The command line looks like this in the new syntax:
+**********
+**********    AddOrReplaceReadGroups -I /dev/stdin -O pL4811A1_hP37_se.bam -SORT_ORDER coordinate -QUIET TRUE -COMPRESSION_LEVEL 9 -MAX_RECORDS_IN_RAM 150000 -RGLB pL4811A1_hP37 -RGPL Illumina -RGPU pL4811A1_hP37 -RGSM pL4811A1_hP37 -RGID pL4811A1_hP37 -VALIDATION_STRINGENCY SILENT
+**********
+
+
+jun 05, 2024 7:40:50 P. M. com.intel.gkl.NativeLibraryLoader load
+INFO: Loading libgkl_compression.dylib from jar:file:/Users/fabio/newcloud/reviveandrestore/mapping.capture/software/picard/build/libs/picard.jar!/com/intel/gkl/native/libgkl_compression.dylib
+jun 05, 2024 7:40:50 P. M. com.intel.gkl.NativeLibraryLoader load
+WARNING: Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (Can't load library: /Users/fabio/newcloud/new/output/temp/fabio/libgkl_compression12438979862869940707.dylib)
+jun 05, 2024 7:40:50 P. M. com.intel.gkl.NativeLibraryLoader load
+INFO: Loading libgkl_compression.dylib from jar:file:/Users/fabio/newcloud/reviveandrestore/mapping.capture/software/picard/build/libs/picard.jar!/com/intel/gkl/native/libgkl_compression.dylib
+jun 05, 2024 7:40:50 P. M. com.intel.gkl.NativeLibraryLoader load
+WARNING: Unable to load libgkl_compression.dylib from native/libgkl_compression.dylib (Can't load library: /Users/fabio/newcloud/new/output/temp/fabio/libgkl_compression15678083223621461607.dylib)
+INFO	2024-06-05 19:40:50	AddOrReplaceReadGroups	Created read-group ID=pL4811A1_hP37 PL=Illumina LB=pL4811A1_hP37 SM=pL4811A1_hP37
+
+jun 05, 2024 7:40:50 P. M. com.intel.gkl.compression.IntelDeflaterFactory makeDeflater
+WARNING: Intel Deflater not supported, using Java.util.zip.Deflater

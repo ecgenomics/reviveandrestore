@@ -1,0 +1,2 @@
+#!/bin/bash -ue
+java -Xmx8g -Djava.io.tmpdir=/Users/fabio/newcloud/new/output/temp -jar /Users/fabio/newcloud/new/software/picard/build/libs/picard.jar MergeSamFiles I=pL4811A1_hP37_pe.bam I=pL4811A1_hP37_se.bam O=pL4811A1_hP37_mrgd.bam; 	  /Users/fabio/newcloud/new/software/samtools-1.20/samtools sort -T pL4811A1_hP37.mg -o pL4811A1_hP37_srtd.bam pL4811A1_hP37_mrgd.bam; 	  /Users/fabio/newcloud/new/software/samtools-1.20/samtools index pL4811A1_hP37_srtd.bam;

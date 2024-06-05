@@ -1,0 +1,2 @@
+#!/bin/bash -ue
+java -Xmx8g -Djava.io.tmpdir=/Users/fabio/newcloud/new/output/temp -jar /Users/fabio/newcloud/new/software/picard/build/libs/picard.jar MarkDuplicates     I=pL4811A1_hP37_srtd.bam     O=pL4811A1_hP37_rmdups.bam     MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=1000 METRICS_FILE=pL4811A1_hP37_rmdups.bam.stats      REMOVE_DUPLICATES=true ASSUME_SORTED=true MAX_RECORDS_IN_RAM=1500000     VALIDATION_STRINGENCY=SILENT CREATE_INDEX=true COMPRESSION_LEVEL=9

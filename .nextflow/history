@@ -1,1 +1,13 @@
 2024-03-20 16:14:20	1s	sharp_poitras	OK	03fa27f84644dd9f743296e324c61942	52b26c81-eeaa-4cc3-97c0-c711e0b90f71	nextflow run main.nf
+2024-06-05 19:33:39	944ms	soggy_allen	OK	bf2c08c91c1f272d6bc752e5fda36a72	9e810d72-64a8-4510-907f-6a22204678ed	nextflow run main.nf
+2024-06-05 19:36:28	1.5s	maniac_plateau	OK	17ffb56731dca11c31a12e009ba7f80d	7470f834-dc8f-42b8-837e-a3e69e2fb6b7	nextflow run main.nf
+2024-06-05 19:37:05	-	determined_hopper	-	6d08d60cbab59ffcfee1a204b535551f	19afbc35-e992-4188-83b4-dd0124a2fb28	nextflow run main.nf
+2024-06-05 19:37:15	1.2s	golden_wozniak	OK	f466ea80595fb42826e3f3d395465936	218f18ff-0389-478c-8aba-4f2b89f3ad6d	nextflow run main.nf
+2024-06-05 19:37:43	1.8s	nostalgic_euler	OK	948a51494b215329fee3f896cfbba99c	ebe6b9b4-5aa7-4cb5-9666-669788e332d1	nextflow run main.nf
+2024-06-05 19:38:42	1.8s	jolly_gutenberg	OK	948a51494b215329fee3f896cfbba99c	ff07a5ef-561d-40a7-9fa4-d562f0533718	nextflow run main.nf
+2024-06-05 19:39:16	1.6s	loquacious_austin	OK	bfe01528d62b382591d52e70778d9236	6168e360-f6c7-42c9-af12-35cd1b3d3ec1	nextflow run main.nf
+2024-06-05 19:39:54	1.5s	reverent_curran	OK	79c7b4b23a0ab8ba2d5446dbeeba403e	d4947f55-dab3-4f5d-bd35-347596dd4ddf	nextflow run main.nf
+2024-06-05 19:40:03	-	zen_ardinghelli	-	dabd193439a41b9d77b31a3ffbb7af34	f1903243-9a57-4077-a71d-a2f0fb9640b5	nextflow run main.nf
+2024-06-05 19:40:12	1.5s	gigantic_mendel	OK	79c7b4b23a0ab8ba2d5446dbeeba403e	9a90f032-1f3f-46cc-a91d-34e49eb07c2b	nextflow run main.nf
+2024-06-05 19:40:37	15.5s	pensive_hopper	OK	79eab5b2b073ff6e72ed15eef1a7964f	4fefa128-6c5b-46d6-acae-d05b5e6170e6	nextflow run main.nf
+2024-06-05 19:41:07	16.1s	loquacious_galileo	ERR	67abeca6cdb2b6436d82955fd9ca48e2	3fd51999-edce-4921-87ed-44079fc7d4f0	nextflow run main.nf

@@ -1,2 +1,0 @@
-samtools view: Unknown flag 'test_R_rmdups.sorted.bam'
-[main_samview] fail to read the header from "-".

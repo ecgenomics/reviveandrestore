@@ -1,0 +1,2 @@
+#!/bin/bash -ue
+fastp -i test_R_demultiplexed_R1.fastq -I test_R_demultiplexed_R2.fastq     --merge --merged_out test_R.merged.fastq     --out1 test_R_trimmed_R1.fastq --out2 test_R_trimmed_R2.fastq     --unpaired1 test_R_trimmed_unpaired_R1.fastq --unpaired2 test_R_trimmed_unpaired_R2.fastq     --overlap_len_require 11 --detect_adapter_for_pe -p     --adapter_sequence=AGATCGGAAGAGCACACGTCTGAACTCCAGTCA     --adapter_sequence_r2=AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT     --trim_poly_g --poly_g_min_len 10 --length_required 30     --html test_R.report.html

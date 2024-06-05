@@ -1,0 +1,2 @@
+#!/bin/bash -ue
+java -Xmx8g -Djava.io.tmpdir=/Users/fabio/newcloud/reviveandrestore/mapping.capture/output/temp -jar /Users/fabio/newcloud/reviveandrestore/mapping.capture/software/picard/build/libs/picard.jar MergeSamFiles I=test_R_pe.bam I=test_R_se.bam O=test_R_mrgd.bam; 	  /Users/fabio/newcloud/reviveandrestore/mapping.capture/software/samtools-1.20/samtools sort -T test_R.mg -o test_R_srtd.bam test_R_mrgd.bam; 	  /Users/fabio/newcloud/reviveandrestore/mapping.capture/software/samtools-1.20/samtools index test_R_srtd.bam;
