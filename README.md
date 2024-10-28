@@ -2,7 +2,7 @@
 
 This pipeline processes high-throughput sequencing data to quantify endogenous or human DNA, preparing equi-endogenous pools for capture. Based on Mapping Capture Experiments, this workflow performs tasks like demultiplexing, trimming, mapping, and quality filtering to create high-quality data for downstream analyses.
 
-#Requirements
+# Requirements
 
 This pipeline assumes access to the following tools:
 
