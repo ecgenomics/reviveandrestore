@@ -23,9 +23,9 @@ nextflow.enable.dsl=2
 // Inputs
 ///////////////////////////////////////////////////////
 
-params.reads = "input/FASTQs/pL4811A1_hP37_{1,2}.fastq.gz"
-params.genome = "input/hg19.fa.masked"
-params.bedfile = "input/tuf.bed"
+params.reads = "inputs/FASTQs/pL4811A1_hP37_{1,2}.fastq.gz"
+params.genome = "inputs/hg19.fa.masked"
+params.bedfile = "inputs/tuf.bed"
 // Folders
 ///////////////////////////////////////////////////////
 
