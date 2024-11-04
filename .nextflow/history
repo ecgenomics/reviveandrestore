@@ -11,4 +11,8 @@
 2024-06-05 19:40:12	1.5s	gigantic_mendel	OK	79c7b4b23a0ab8ba2d5446dbeeba403e	9a90f032-1f3f-46cc-a91d-34e49eb07c2b	nextflow run main.nf
 2024-06-05 19:40:37	15.5s	pensive_hopper	OK	79eab5b2b073ff6e72ed15eef1a7964f	4fefa128-6c5b-46d6-acae-d05b5e6170e6	nextflow run main.nf
 2024-06-05 19:41:07	16.1s	loquacious_galileo	ERR	67abeca6cdb2b6436d82955fd9ca48e2	3fd51999-edce-4921-87ed-44079fc7d4f0	nextflow run main.nf
+<<<<<<< HEAD
 2024-10-30 15:55:56	1s	confident_ptolemy	OK	67abeca6cdb2b6436d82955fd9ca48e2	a6699292-e6a7-4696-940c-32bd5c5b1334	nextflow main.nf
+=======
+2024-06-05 19:47:10	16.9s	high_solvay	ERR	67abeca6cdb2b6436d82955fd9ca48e2	7919bb84-6c47-40c1-810b-463f0a87c557	nextflow run main.nf
+>>>>>>> 3534ae5b895933922a51d97d95a63708d05a6104
