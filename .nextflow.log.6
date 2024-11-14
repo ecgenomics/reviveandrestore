@@ -1,75 +1,154 @@
-jun-05 19:39:16.188 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
-jun-05 19:39:16.253 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
-jun-05 19:39:16.267 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/fabio/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
-jun-05 19:39:16.274 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-jun-05 19:39:16.275 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-jun-05 19:39:16.277 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
-jun-05 19:39:16.285 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-jun-05 19:39:16.298 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/fabio/newcloud/new/nextflow.config
-jun-05 19:39:16.300 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/fabio/newcloud/new/nextflow.config
-jun-05 19:39:16.317 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/fabio/.nextflow/secrets/store.json
-jun-05 19:39:16.319 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2160e52a] - activable => nextflow.secret.LocalSecretsProvider@2160e52a
-jun-05 19:39:16.323 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-jun-05 19:39:16.547 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-jun-05 19:39:16.560 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [loquacious_austin] DSL2 - revision: bfe01528d6
-jun-05 19:39:16.562 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-jun-05 19:39:16.563 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-jun-05 19:39:16.599 [main] DEBUG nextflow.Session - Session UUID: 6168e360-f6c7-42c9-af12-35cd1b3d3ec1
-jun-05 19:39:16.600 [main] DEBUG nextflow.Session - Run name: loquacious_austin
-jun-05 19:39:16.600 [main] DEBUG nextflow.Session - Executor pool size: 8
-jun-05 19:39:16.605 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-jun-05 19:39:16.609 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-jun-05 19:39:16.627 [main] DEBUG nextflow.cli.CmdRun - 
+nov-14 14:46:32.171 [main] DEBUG nextflow.cli.Launcher - $> nextflow main.nf -resume
+nov-14 14:46:32.246 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+nov-14 14:46:32.257 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/fabio/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+nov-14 14:46:32.264 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+nov-14 14:46:32.264 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+nov-14 14:46:32.266 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+nov-14 14:46:32.272 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+nov-14 14:46:32.283 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/fabio/newcloud/projects/rr/reviveandrestore/nextflow.config
+nov-14 14:46:32.285 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/fabio/newcloud/projects/rr/reviveandrestore/nextflow.config
+nov-14 14:46:32.300 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/fabio/.nextflow/secrets/store.json
+nov-14 14:46:32.301 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4642b71d] - activable => nextflow.secret.LocalSecretsProvider@4642b71d
+nov-14 14:46:32.303 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+nov-14 14:46:32.519 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+nov-14 14:46:32.528 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [voluminous_avogadro] DSL2 - revision: a9272e1c2e
+nov-14 14:46:32.529 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+nov-14 14:46:32.529 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+nov-14 14:46:32.565 [main] DEBUG nextflow.Session - Session UUID: 2c7a3e9a-5f65-4997-b397-dee894c5e454
+nov-14 14:46:32.565 [main] DEBUG nextflow.Session - Run name: voluminous_avogadro
+nov-14 14:46:32.565 [main] DEBUG nextflow.Session - Executor pool size: 8
+nov-14 14:46:32.569 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+nov-14 14:46:32.578 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+nov-14 14:46:32.590 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 24.04.2 build 5914
   Created: 29-05-2024 06:19 UTC (08:19 CEST)
   System: Mac OS X 14.5
   Runtime: Groovy 4.0.21 on Java HotSpot(TM) 64-Bit Server VM 17.0.6+9-LTS-190
   Encoding: UTF-8 (UTF-8)
-  Process: 87748@McClintock.local [127.0.0.1]
-  CPUs: 8 - Mem: 8 GB (183.1 MB) - Swap: 2 GB (1.3 GB)
-jun-05 19:39:16.637 [main] DEBUG nextflow.Session - Work-dir: /Users/fabio/newcloud/new/work [Mac OS X]
-jun-05 19:39:16.637 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/fabio/newcloud/new/bin
-jun-05 19:39:16.643 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-jun-05 19:39:16.648 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-jun-05 19:39:16.664 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-jun-05 19:39:16.670 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
-jun-05 19:39:16.705 [main] DEBUG nextflow.Session - Session start
-jun-05 19:39:17.219 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-jun-05 19:39:17.320 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-jun-05 19:39:17.320 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-jun-05 19:39:17.325 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-jun-05 19:39:17.329 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-jun-05 19:39:17.331 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-jun-05 19:39:17.381 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-jun-05 19:39:17.381 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-jun-05 19:39:17.388 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-jun-05 19:39:17.388 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-jun-05 19:39:17.393 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-jun-05 19:39:17.393 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-jun-05 19:39:17.404 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-jun-05 19:39:17.404 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-jun-05 19:39:17.409 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-jun-05 19:39:17.409 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-jun-05 19:39:17.415 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-jun-05 19:39:17.415 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-jun-05 19:39:17.418 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: align_pe, align_se, trim, filterQuality, multiplexing, merge_sepe, rmdup, ontarget
-jun-05 19:39:17.418 [main] DEBUG nextflow.Session - Igniting dataflow network (8)
-jun-05 19:39:17.422 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: input/; pattern: pL4811A1_hP37_{1,2}.fastq.gz; options: [:]
-jun-05 19:39:17.423 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multiplexing
-jun-05 19:39:17.423 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > trim
-jun-05 19:39:17.423 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > align_se
-jun-05 19:39:17.424 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > align_pe
-jun-05 19:39:17.424 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > merge_sepe
-jun-05 19:39:17.425 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > rmdup
-jun-05 19:39:17.425 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > filterQuality
-jun-05 19:39:17.425 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_7041a1b20da2fad3: /Users/fabio/newcloud/new/main.nf
-jun-05 19:39:17.425 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-jun-05 19:39:17.425 [main] DEBUG nextflow.Session - Session await
-jun-05 19:39:17.434 [main] DEBUG nextflow.Session - Session await > all processes finished
-jun-05 19:39:17.438 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-jun-05 19:39:17.439 [main] DEBUG nextflow.Session - Session await > all barriers passed
-jun-05 19:39:17.443 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-jun-05 19:39:17.552 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-jun-05 19:39:17.567 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-jun-05 19:39:17.568 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 78993@McClintock.local [172.30.153.57]
+  CPUs: 8 - Mem: 8 GB (48.7 MB) - Swap: 3 GB (1.3 GB)
+nov-14 14:46:32.605 [main] DEBUG nextflow.Session - Work-dir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work [Mac OS X]
+nov-14 14:46:32.605 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/fabio/newcloud/projects/rr/reviveandrestore/bin
+nov-14 14:46:32.610 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+nov-14 14:46:32.616 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+nov-14 14:46:32.628 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+nov-14 14:46:32.633 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+nov-14 14:46:32.666 [main] DEBUG nextflow.Session - Session start
+nov-14 14:46:33.050 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+nov-14 14:46:33.131 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+nov-14 14:46:33.131 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+nov-14 14:46:33.133 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+nov-14 14:46:33.136 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+nov-14 14:46:33.137 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+nov-14 14:46:33.173 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+nov-14 14:46:33.174 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+nov-14 14:46:33.177 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+nov-14 14:46:33.177 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+nov-14 14:46:33.181 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+nov-14 14:46:33.181 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+nov-14 14:46:33.186 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+nov-14 14:46:33.186 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+nov-14 14:46:33.189 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+nov-14 14:46:33.189 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+nov-14 14:46:33.191 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+nov-14 14:46:33.191 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+nov-14 14:46:33.194 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+nov-14 14:46:33.194 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+nov-14 14:46:33.197 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+nov-14 14:46:33.197 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+nov-14 14:46:33.200 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: align_pe, align_se, trim, filterQuality, multiplexing, secondstats, merge_sepe, firststats, rmdup, ontarget
+nov-14 14:46:33.200 [main] DEBUG nextflow.Session - Igniting dataflow network (10)
+nov-14 14:46:33.203 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /Users/fabio/newcloud/projects/rr/reviveandrestore/inputs/FASTQ/; pattern: *_{1,2}.fastq.gz; options: [:]
+nov-14 14:46:33.203 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multiplexing
+nov-14 14:46:33.203 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > trim
+nov-14 14:46:33.203 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > align_se
+nov-14 14:46:33.203 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > align_pe
+nov-14 14:46:33.203 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > merge_sepe
+nov-14 14:46:33.203 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > rmdup
+nov-14 14:46:33.203 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > filterQuality
+nov-14 14:46:33.203 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ontarget
+nov-14 14:46:33.203 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > firststats
+nov-14 14:46:33.204 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_201e0a7429f11148: /Users/fabio/newcloud/projects/rr/reviveandrestore/main.nf
+nov-14 14:46:33.204 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+nov-14 14:46:33.204 [main] DEBUG nextflow.Session - Session await
+nov-14 14:46:33.317 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [92/35826c] Cached process > multiplexing (pL4816A1_hP37)
+nov-14 14:46:33.317 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [7e/b18994] Cached process > multiplexing (pL4811A1_hP37)
+nov-14 14:46:33.317 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [fa/2b1b1b] Cached process > multiplexing (pL4814A1_hP37)
+nov-14 14:46:33.331 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [df/072296] Cached process > trim (2)
+nov-14 14:46:33.331 [Actor Thread 9] INFO  nextflow.processor.TaskProcessor - [da/5f4dda] Cached process > trim (3)
+nov-14 14:46:33.334 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [f9/09d392] Cached process > trim (1)
+nov-14 14:46:33.336 [Actor Thread 2] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+nov-14 14:46:33.411 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:33.412 [Task submitter] INFO  nextflow.Session - [9b/91c1a1] Submitted process > align_se (1)
+nov-14 14:46:33.431 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:33.432 [Task submitter] INFO  nextflow.Session - [99/9c8679] Submitted process > align_pe (2)
+nov-14 14:46:33.703 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:33.704 [Task submitter] INFO  nextflow.Session - [06/39fa75] Submitted process > align_pe (1)
+nov-14 14:46:33.709 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:33.709 [Task submitter] INFO  nextflow.Session - [f9/a0a261] Submitted process > align_pe (3)
+nov-14 14:46:33.714 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:33.714 [Task submitter] INFO  nextflow.Session - [f3/68e6c1] Submitted process > align_se (2)
+nov-14 14:46:33.718 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:33.718 [Task submitter] INFO  nextflow.Session - [03/e3e62a] Submitted process > align_se (3)
+nov-14 14:46:36.254 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: align_se (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/9b/91c1a100610957a57f734c5cb35738]
+nov-14 14:46:36.261 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+nov-14 14:46:36.263 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: align_pe (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/99/9c8679cafc856ee239447c571839dc]
+nov-14 14:46:36.263 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: align_pe (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/06/39fa7543038351d6eb727e2be9b8d4]
+nov-14 14:46:36.264 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: align_pe (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/f9/a0a261bd5df855ed109621745bbdfc]
+nov-14 14:46:36.264 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: align_se (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/f3/68e6c1ce64b48ad302f560a6847ebf]
+nov-14 14:46:36.264 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: align_se (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/03/e3e62ad0036fb0e01ef5879af0b013]
+nov-14 14:46:36.292 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:36.292 [Task submitter] INFO  nextflow.Session - [c0/3b94f7] Submitted process > merge_sepe (3)
+nov-14 14:46:36.294 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:36.294 [Task submitter] INFO  nextflow.Session - [40/a93af4] Submitted process > merge_sepe (1)
+nov-14 14:46:36.296 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:36.296 [Task submitter] INFO  nextflow.Session - [d3/f5e167] Submitted process > merge_sepe (2)
+nov-14 14:46:37.174 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: merge_sepe (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/c0/3b94f77f441ccad717719003683ba2]
+nov-14 14:46:37.181 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: merge_sepe (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/d3/f5e16787600fd6da920309ed91cd77]
+nov-14 14:46:37.185 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: merge_sepe (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/40/a93af404f15a912aa1c5db87beae03]
+nov-14 14:46:37.189 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:37.190 [Task submitter] INFO  nextflow.Session - [35/a54880] Submitted process > rmdup (1)
+nov-14 14:46:37.191 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:37.192 [Task submitter] INFO  nextflow.Session - [b8/f61d28] Submitted process > rmdup (2)
+nov-14 14:46:37.194 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:37.194 [Task submitter] INFO  nextflow.Session - [0d/8e9261] Submitted process > rmdup (3)
+nov-14 14:46:39.020 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: rmdup (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/35/a5488044937cd29fe73871ecfafef0]
+nov-14 14:46:39.043 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: rmdup (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/0d/8e92616589b286e0deeb06f88c61fd]
+nov-14 14:46:39.044 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:39.044 [Task submitter] INFO  nextflow.Session - [d2/d7d638] Submitted process > filterQuality (1)
+nov-14 14:46:39.045 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: rmdup (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/b8/f61d28a82fd5476a92e59567e4e869]
+nov-14 14:46:39.051 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:39.051 [Task submitter] INFO  nextflow.Session - [92/9a13d2] Submitted process > filterQuality (2)
+nov-14 14:46:39.053 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:39.053 [Task submitter] INFO  nextflow.Session - [d1/3c851c] Submitted process > filterQuality (3)
+nov-14 14:46:39.172 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: filterQuality (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/d2/d7d6384f0be3ddc2a5422dc4b99063]
+nov-14 14:46:39.172 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: filterQuality (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/92/9a13d2d8f660bdd2a1086c7e7dfbc0]
+nov-14 14:46:39.173 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: filterQuality (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/d1/3c851cb77846f77a920ab16959338b]
+nov-14 14:46:39.190 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:39.191 [Task submitter] INFO  nextflow.Session - [6b/6fd1ea] Submitted process > ontarget (3)
+nov-14 14:46:39.195 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:39.196 [Task submitter] INFO  nextflow.Session - [e5/91c41c] Submitted process > ontarget (2)
+nov-14 14:46:39.199 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:39.199 [Task submitter] INFO  nextflow.Session - [59/7e13b0] Submitted process > ontarget (1)
+nov-14 14:46:39.219 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: ontarget (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/6b/6fd1ea7e0ca5b82101b0bc6a7e3658]
+nov-14 14:46:39.220 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: ontarget (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/e5/91c41c7273589493fe869430b0068a]
+nov-14 14:46:39.228 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: ontarget (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/59/7e13b0adb92d0e24a9ed5cec50d011]
+nov-14 14:46:39.249 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:39.249 [Task submitter] INFO  nextflow.Session - [6e/60e66a] Submitted process > firststats (2)
+nov-14 14:46:39.251 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:39.252 [Task submitter] INFO  nextflow.Session - [77/b14180] Submitted process > firststats (3)
+nov-14 14:46:39.254 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+nov-14 14:46:39.254 [Task submitter] INFO  nextflow.Session - [b7/c0e7e9] Submitted process > firststats (1)
+nov-14 14:46:39.863 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: firststats (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/6e/60e66aca99729956e143aede0f8e96]
+nov-14 14:46:39.867 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: firststats (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/77/b14180450e9d979c673ea6b18b979b]
+nov-14 14:46:39.872 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: firststats (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/b7/c0e7e95d972557731987570d7118d2]
+nov-14 14:46:39.873 [main] DEBUG nextflow.Session - Session await > all processes finished
+nov-14 14:46:39.976 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+nov-14 14:46:39.976 [main] DEBUG nextflow.Session - Session await > all barriers passed
+nov-14 14:46:39.980 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+nov-14 14:46:39.980 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+nov-14 14:46:39.988 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=21; failedCount=0; ignoredCount=0; cachedCount=6; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=24.1s; failedDuration=0ms; cachedDuration=1m 36s;loadCpus=0; loadMemory=0; peakRunning=6; peakCpus=6; peakMemory=0; ]
+nov-14 14:46:40.022 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+nov-14 14:46:40.040 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+nov-14 14:46:40.040 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

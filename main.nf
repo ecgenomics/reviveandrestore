@@ -1,15 +1,14 @@
 #!/usr/bin/env nextflow
 
 /*
-  _____            _                      _____           _                 
- |  __ \          (_)             ___    |  __ \         | |                
- | |__) |_____   _____   _____   ( _ )   | |__) |___  ___| |_ ___  _ __ ___ 
- |  _  // _ \ \ / / \ \ / / _ \  / _ \/\ |  _  // _ \/ __| __/ _ \| '__/ _ \
- | | \ \  __/\ V /| |\ V /  __/ | (_>  < | | \ \  __/\__ \ || (_) | | |  __/
- |_|  \_\___| \_/ |_| \_/ \___|  \___/\/ |_|  \_\___||___/\__\___/|_|  \___|
-                                                                            
-                                                                            
-  Module name: main.nf
+  _______ __  __ ____    _               ____  
+ |__   __|  \/  |  _ \  | |        /\   |  _ \ 
+    | |  | \  / | |_) | | |       /  \  | |_) |
+    | |  | |\/| |  _ <  | |      / /\ \ |  _ < 
+    | |  | |  | | |_) | | |____ / ____ \| |_) |
+    |_|  |_|  |_|____/  |______/_/    \_\____/ 
+                                                                                                                                                                                                     
+  MAPPING CAPTURE EXPERIMENTS - 
                                                                            
   Endogenous or hDNA Quantification to prepare equi-endogenous pools for capture 
   Based on https://github.com/claudefa/Mapping_Capture_Experiments
@@ -23,9 +22,10 @@ nextflow.enable.dsl=2
 // Inputs
 ///////////////////////////////////////////////////////
 
-params.reads = "inputs/FASTQs/pL4811A1_hP37_{1,2}.fastq.gz"
-params.genome = "inputs/hg19.fa.masked"
-params.bedfile = "inputs/tuf.bed"
+params.reads = baseDir + "/inputs/FASTQ/*_{1,2}.fastq.gz"
+params.genome = baseDir + "/inputs/hg19.masked.fa"
+params.bedfile = "${baseDir}/inputs/tuf.bed"
+
 // Folders
 ///////////////////////////////////////////////////////
 
@@ -53,6 +53,9 @@ params.BAM_hg19_filtered = params.session + "/BAM_hg19_filtered"
 //    On target
 params.BAM_ontarget = params.session + "/BAM_ontarget"
 
+//    On target
+params.stats = params.session + "/stats"
+
 
 // Software (warning: this needs to change with the singularity)
 ///////////////////////////////////////////////////////
@@ -67,7 +70,7 @@ params.picard = baseDir + "/software/picard/build/libs/picard.jar"
 params.bwa = baseDir + "/software/bwa/bwa"
 
 //    samtools
-params.samtools = baseDir + "/software/samtools-1.20/samtools"
+params.samtools = baseDir + "/software/samtools/samtools"
 
 //    bedtools
 params.bedtools = baseDir + "/software/bedtools2/bin/"
@@ -235,7 +238,7 @@ process filterQuality {
   """
 }
 
-// Step 5 : On target Hg19
+// Step 5 : [1] On target Hg19
 
 process ontarget {
 
@@ -253,7 +256,48 @@ process ontarget {
   """
 }
 
-// Step 6 : [1] Stats
+// Step 5 : [2] Stats (first stats)
+
+process firststats {
+
+  publishDir "${params.stats}", mode: "copy", overwrite : true
+
+  input:
+  tuple val(sample_id), path(nodups_sorted)
+  
+  output:
+  tuple val(sample_id), path("${sample_id}_sorted.stats")
+
+  script:
+  """
+    java -Xmx4g -jar ${params.picard} CollectAlignmentSummaryMetrics \
+    -INPUT ${nodups_sorted} -METRIC_ACCUMULATION_LEVEL SAMPLE \
+    -REFERENCE_SEQUENCE ${params.genome} \
+    -OUTPUT ${sample_id}_sorted.stats -VALIDATION_STRINGENCY SILENT
+  """
+  }
+
+
+// Step 6 : Stats (second stats)
+
+process secondstats {
+
+  publishDir "${params.stats}", mode: "copy", overwrite : true
+
+  input:
+  tuple val(sample_id), path("${params.bam_hg19}/${sample_id}_srtd.bam"), path("${params.bam_hg19_no_dups}/${sample_id}_rmdups.bam.stats", path("${params.BAM_hg19_filtered}/${sample_id}_rmdups.qual.bam"))
+  
+  output:
+  tuple val(sample_id), path("${sample_id}_sorted.stats")
+
+  script:
+  """
+    java -Xmx4g -jar ${params.picard} CollectAlignmentSummaryMetrics \
+    -INPUT ${nodups_sorted} -METRIC_ACCUMULATION_LEVEL SAMPLE \
+    -REFERENCE_SEQUENCE ${params.genome} \
+    -OUTPUT ${sample_id}_sorted.stats -VALIDATION_STRINGENCY SILENT
+  """
+  }
 
 
 // THE WORKFLOW
@@ -265,16 +309,33 @@ workflow {
     reads_ch = Channel.fromFilePairs(params.reads, flat: true)
     reads_ch.view()
 
+    // Channel creation
+
+
     // Process launch
     demulti = multiplexing(reads_ch)              // Step 0 : demultiplexing
     trimmed = trim(demulti)                       // Step 1 : trimming
+   
     aligned_se = align_se(trimmed)                // Step 2 : [1] Pair end alignment
     aligned_pe = align_pe(trimmed)                // Step 2 : [2] Paired ends alignment
 
     allbams = aligned_se.join(aligned_pe)         
     merged = merge_sepe(allbams)                  // Step 3 : [1] Merge single- and paired- end
     nodups = rmdup(merged)                        // Step 3 : [2] remove the duplicates
+
     filtered = filterQuality(nodups)              // Step 4 : filter
-    ontrg = ontarget(nodups)                     // Step 5 : On target
+    ontrg = ontarget(filtered)                     // Step 5 : On target
+    fs = firststats(ontrg)
+
+    // Combining outputs
+    
+    s_id = merged.map { tuple -> tuple[0]}
+    mapped = merged.map { tuple -> tuple[1]}
+    unique = nodups.map { tuple -> tuple[1]}
+    filts = filtered.map {tuple -> tuple[1]}
+
+    summary = s_id.concat(mapped, unique, filts)
+    summary.view()
+
 }  
 

@@ -1,6 +1,14 @@
 # Pipeline Overview
 
-This pipeline processes high-throughput sequencing data to quantify endogenous or human DNA, preparing equi-endogenous pools for capture. Based on Mapping Capture Experiments, this workflow performs tasks like demultiplexing, trimming, mapping, and quality filtering to create high-quality data for downstream analyses.
+This Nextflow script performs a DNA sequencing data processing pipeline tailored for capturing and isolating endogenous or specific DNA (hDNA) regions in human samples. The pipeline takes raw sequencing reads and processes them through several steps to produce high-quality, target-enriched BAM files ready for downstream analyses. Here’s a breakdown of the main steps:
+	1.	Demultiplexing: Raw reads from pooled sequencing data are separated by sample-specific barcodes, enabling differentiation of multiple samples within a single sequencing run.
+	2.	Trimming: Adapter sequences and low-quality bases are removed from the reads, resulting in cleaner data. This step generates trimmed paired-end files that are essential for accurate mapping.
+	3.	Alignment: Trimmed reads are aligned to the human reference genome (hg19) using BWA. Both single-end and paired-end alignments are conducted, depending on the sequencing strategy, producing BAM files for each.
+	4.	Merging & Deduplication: BAM files from single- and paired-end reads are merged, and duplicate reads are removed. Deduplication is crucial for reducing PCR artifacts and obtaining a more accurate representation of the DNA sample.
+	5.	Quality Filtering: Aligned reads are filtered by quality score, retaining only high-confidence reads. This step enhances the reliability of downstream analyses by excluding low-quality data.
+	6.	On-Target Filtering: Using a BED file specifying genomic regions of interest, only reads that overlap with these target regions are retained. This on-target enrichment focuses the data on relevant areas, increasing the signal for downstream capture and variant analysis.
+
+The final output consists of high-quality, deduplicated, and on-target BAM files that are optimized for studies requiring targeted DNA capture, such as studies on genetic variation in specific genomic regions. This pipeline automates several steps essential for obtaining reliable, high-quality data for capture-based sequencing applications.
 
 # Requirements
 
