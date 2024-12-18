@@ -1,99 +1,106 @@
-nov-14 14:52:18.111 [main] DEBUG nextflow.cli.Launcher - $> nextflow main.nf -resume
-nov-14 14:52:18.186 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
-nov-14 14:52:18.198 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/fabio/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
-nov-14 14:52:18.205 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-nov-14 14:52:18.206 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-nov-14 14:52:18.208 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
-nov-14 14:52:18.215 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-nov-14 14:52:18.226 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/fabio/newcloud/projects/rr/reviveandrestore/nextflow.config
-nov-14 14:52:18.227 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/fabio/newcloud/projects/rr/reviveandrestore/nextflow.config
-nov-14 14:52:18.241 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/fabio/.nextflow/secrets/store.json
-nov-14 14:52:18.243 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4642b71d] - activable => nextflow.secret.LocalSecretsProvider@4642b71d
-nov-14 14:52:18.245 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-nov-14 14:52:18.446 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-nov-14 14:52:18.456 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [cheeky_jones] DSL2 - revision: 34381b5aa8
-nov-14 14:52:18.457 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-nov-14 14:52:18.457 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-nov-14 14:52:18.490 [main] DEBUG nextflow.Session - Session UUID: 2c7a3e9a-5f65-4997-b397-dee894c5e454
-nov-14 14:52:18.490 [main] DEBUG nextflow.Session - Run name: cheeky_jones
-nov-14 14:52:18.490 [main] DEBUG nextflow.Session - Executor pool size: 8
-nov-14 14:52:18.500 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-nov-14 14:52:18.504 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-nov-14 14:52:18.523 [main] DEBUG nextflow.cli.CmdRun - 
+dic-16 12:07:00.242 [main] DEBUG nextflow.cli.Launcher - $> nextflow hdna.nf
+dic-16 12:07:00.346 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+dic-16 12:07:00.358 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/fabio/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+dic-16 12:07:00.364 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+dic-16 12:07:00.365 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+dic-16 12:07:00.366 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+dic-16 12:07:00.373 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+dic-16 12:07:00.384 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/fabio/newcloud/projects/rr/reviveandrestore/nextflow.config
+dic-16 12:07:00.385 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/fabio/newcloud/projects/rr/reviveandrestore/nextflow.config
+dic-16 12:07:00.401 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/fabio/.nextflow/secrets/store.json
+dic-16 12:07:00.403 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1450078a] - activable => nextflow.secret.LocalSecretsProvider@1450078a
+dic-16 12:07:00.405 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+dic-16 12:07:00.658 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+dic-16 12:07:00.667 [main] DEBUG nextflow.cli.CmdRun - Launching `hdna.nf` [maniac_panini] DSL2 - revision: 8b78acc873
+dic-16 12:07:00.668 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+dic-16 12:07:00.668 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+dic-16 12:07:00.714 [main] DEBUG nextflow.Session - Session UUID: 33990c1f-6966-4520-b065-47388f8b8d4a
+dic-16 12:07:00.714 [main] DEBUG nextflow.Session - Run name: maniac_panini
+dic-16 12:07:00.714 [main] DEBUG nextflow.Session - Executor pool size: 8
+dic-16 12:07:00.719 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+dic-16 12:07:00.721 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+dic-16 12:07:00.737 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 24.04.2 build 5914
   Created: 29-05-2024 06:19 UTC (08:19 CEST)
   System: Mac OS X 14.5
   Runtime: Groovy 4.0.21 on Java HotSpot(TM) 64-Bit Server VM 17.0.6+9-LTS-190
   Encoding: UTF-8 (UTF-8)
-  Process: 79590@McClintock.local [172.30.153.57]
-  CPUs: 8 - Mem: 8 GB (93.1 MB) - Swap: 3 GB (1.1 GB)
-nov-14 14:52:18.538 [main] DEBUG nextflow.Session - Work-dir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work [Mac OS X]
-nov-14 14:52:18.538 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/fabio/newcloud/projects/rr/reviveandrestore/bin
-nov-14 14:52:18.543 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-nov-14 14:52:18.547 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-nov-14 14:52:18.558 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-nov-14 14:52:18.563 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
-nov-14 14:52:18.597 [main] DEBUG nextflow.Session - Session start
-nov-14 14:52:18.972 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-nov-14 14:52:19.060 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-nov-14 14:52:19.060 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-nov-14 14:52:19.063 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-nov-14 14:52:19.065 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-nov-14 14:52:19.067 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-nov-14 14:52:19.095 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-nov-14 14:52:19.095 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-nov-14 14:52:19.099 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-nov-14 14:52:19.099 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-nov-14 14:52:19.103 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-nov-14 14:52:19.103 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-nov-14 14:52:19.109 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-nov-14 14:52:19.109 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-nov-14 14:52:19.112 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-nov-14 14:52:19.112 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-nov-14 14:52:19.115 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-nov-14 14:52:19.115 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-nov-14 14:52:19.117 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-nov-14 14:52:19.118 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-nov-14 14:52:19.121 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-nov-14 14:52:19.121 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-nov-14 14:52:19.125 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_7e6451753f154844: /Users/fabio/newcloud/projects/rr/reviveandrestore/main.nf
-nov-14 14:52:19.125 [main] DEBUG nextflow.Session - Session aborted -- Cause: Cannot invoke method view() on null object
-nov-14 14:52:19.134 [main] DEBUG nextflow.Session - The following nodes are still active:
-  [operator] view
-  [operator] join
-  [operator] map
-  [operator] map
-  [operator] map
-  [operator] map
+  Process: 96926@McClintock.local [127.0.0.1]
+  CPUs: 8 - Mem: 8 GB (130.8 MB) - Swap: 4 GB (1.1 GB)
+dic-16 12:07:00.744 [main] DEBUG nextflow.Session - Work-dir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work [Mac OS X]
+dic-16 12:07:00.744 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/fabio/newcloud/projects/rr/reviveandrestore/bin
+dic-16 12:07:00.750 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+dic-16 12:07:00.754 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+dic-16 12:07:00.764 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+dic-16 12:07:00.770 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+dic-16 12:07:00.801 [main] DEBUG nextflow.Session - Session start
+dic-16 12:07:01.005 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+dic-16 12:07:01.087 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+dic-16 12:07:01.087 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+dic-16 12:07:01.090 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+dic-16 12:07:01.093 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=8 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+dic-16 12:07:01.094 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+dic-16 12:07:01.125 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+dic-16 12:07:01.125 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+dic-16 12:07:01.127 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: demultiplexing, trimming
+dic-16 12:07:01.127 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+dic-16 12:07:01.129 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /Users/fabio/newcloud/projects/rr/reviveandrestore/inputs/FASTQ/; pattern: *_{1,2}.fastq.gz; options: [:]
+dic-16 12:07:01.130 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > demultiplexing
+dic-16 12:07:01.130 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > trimming
+dic-16 12:07:01.130 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_3f3d12badb68f30a: /Users/fabio/newcloud/projects/rr/reviveandrestore/hdna.nf
+dic-16 12:07:01.130 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+dic-16 12:07:01.130 [main] DEBUG nextflow.Session - Session await
+dic-16 12:07:01.224 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+dic-16 12:07:01.226 [Task submitter] INFO  nextflow.Session - [6c/606aa4] Submitted process > demultiplexing (pL4816A1_hP37)
+dic-16 12:07:01.244 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+dic-16 12:07:01.245 [Task submitter] INFO  nextflow.Session - [4e/d46979] Submitted process > demultiplexing (pL4814A1_hP37)
+dic-16 12:07:01.248 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+dic-16 12:07:01.248 [Task submitter] INFO  nextflow.Session - [ae/0d0e31] Submitted process > demultiplexing (pL4811A1_hP37)
+dic-16 12:07:03.863 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: demultiplexing (pL4811A1_hP37); status: COMPLETED; exit: 0; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/ae/0d0e31e09dc58ca6b5b67cd02d534b]
+dic-16 12:07:03.864 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+dic-16 12:07:03.884 [Actor Thread 6] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `fastp` -- Initialise it to a default value eg. `params.fastp = some_value`
+dic-16 12:07:03.890 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+dic-16 12:07:03.895 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+dic-16 12:07:03.895 [Task submitter] INFO  nextflow.Session - [2f/fa22ac] Submitted process > trimming (pL4811A1_hP37)
+dic-16 12:07:03.959 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: trimming (pL4811A1_hP37); status: COMPLETED; exit: 127; error: -; workDir: /Users/fabio/newcloud/projects/rr/reviveandrestore/work/2f/fa22ac878b414b23fff9a20486a8df]
+dic-16 12:07:03.961 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=trimming (pL4811A1_hP37); work-dir=/Users/fabio/newcloud/projects/rr/reviveandrestore/work/2f/fa22ac878b414b23fff9a20486a8df
+  error [nextflow.exception.ProcessFailedException]: Process `trimming (pL4811A1_hP37)` terminated with an error exit status (127)
+dic-16 12:07:03.973 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'trimming (pL4811A1_hP37)'
 
-nov-14 14:52:19.137 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-nov-14 14:52:19.137 [main] ERROR nextflow.cli.Launcher - @unknown
-java.lang.NullPointerException: Cannot invoke method view() on null object
-	at org.codehaus.groovy.runtime.NullObject.invokeMethod(NullObject.java:113)
-	at org.codehaus.groovy.vmplugin.v8.IndyGuardsFiltersAndSignatures.invokeGroovyObjectInvoker(IndyGuardsFiltersAndSignatures.java:151)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at Script_7e6451753f154844$_runScript_closure11$_closure56.doCall(Script_7e6451753f154844:338)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.Closure.call(Closure.java:433)
-	at groovy.lang.Closure.call(Closure.java:412)
-	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
-	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
-	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.script.BaseScript.run0(BaseScript.groovy:198)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.script.BaseScript.run(BaseScript.groovy:209)
-	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
-	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:243)
-	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:138)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:372)
-	at nextflow.cli.Launcher.run(Launcher.groovy:503)
-	at nextflow.cli.Launcher.main(Launcher.groovy:657)
+Caused by:
+  Process `trimming (pL4811A1_hP37)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  null -i pL4811A1_hP37_demultiplexed_R1.fastq -I pL4811A1_hP37_demultiplexed_R2.fastq     --out1 pL4811A1_hP37_trimmed_R1.fastq --out2 pL4811A1_hP37_trimmed_R2.fastq     --unpaired1 pL4811A1_hP37_trimmed_unpaired_R1.fastq --unpaired2 pL4811A1_hP37_trimmed_unpaired_R2.fastq     --adapter_sequence=AGATCGGAAGAGCACACGTCTGAACTCCAGTCA     --adapter_sequence_r2=AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT     --trim_poly_g --poly_g_min_len 10 --length_required 30     --html pL4811A1_hP37.html
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: null: command not found
+
+Work dir:
+  /Users/fabio/newcloud/projects/rr/reviveandrestore/work/2f/fa22ac878b414b23fff9a20486a8df
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+dic-16 12:07:03.974 [TaskFinalizer-2] DEBUG nextflow.Session - Session aborted -- Cause: Process `trimming (pL4811A1_hP37)` terminated with an error exit status (127)
+dic-16 12:07:03.982 [TaskFinalizer-2] DEBUG nextflow.Session - The following nodes are still active:
+[process] trimming
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+dic-16 12:07:03.983 [main] DEBUG nextflow.Session - Session await > all processes finished
+dic-16 12:07:03.983 [main] DEBUG nextflow.Session - Session await > all barriers passed
+dic-16 12:07:03.983 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+dic-16 12:07:03.987 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (2)
+dic-16 12:07:04.008 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=2; succeedDuration=2.6s; failedDuration=11ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+dic-16 12:07:04.189 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+dic-16 12:07:04.209 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
